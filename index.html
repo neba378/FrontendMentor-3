@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@1,9..40,1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="data">
+        <div class="each-data">
+          <label for="day">DAY</label>
+          <br />
+          <input type="text" name="day" id="day" placeholder="DD" />
+        </div>
+        <div class="each-data">
+          <label for="day">MONTH</label>
+          <br />
+          <input type="text" name="day" id="month" placeholder="MM" />
+        </div>
+        <div class="each-data">
+          <label for="day">YEAR</label>
+          <br />
+          <input type="text" name="day" id="year" placeholder="YYYY" />
+        </div>
+      </div>
+      <div class="linker" style="display: flex">
+        <hr style="width: 75%; position: absolute" />
+        <a id="calculate" href="#">
+          <div
+            class="the-link"
+            style="
+              height: 70px;
+              width: 70px;
+              border-radius: 50%;
+              background-color: #854cff;
+            "
+          >
+            <p
+              style="
+                height: 45px;
+
+                position: relative;
+                left: 34px;
+                top: -4px;
+                background: white;
+                width: 3px;
+                justify-self: center;
+              "
+            ></p>
+            <p
+              style="
+                height: 28px;
+
+                position: relative;
+                left: 24px;
+                top: -44.3px;
+                background: rgb(255, 255, 255);
+                width: 3px;
+                justify-self: center;
+                transform: rotate(-45deg);
+              "
+            ></p>
+            <p
+              style="
+                height: 28px;
+
+                position: absolute;
+                left: 42.3px;
+                top: 18px;
+                background: rgb(255, 255, 255);
+                width: 3px;
+                justify-self: center;
+                transform: rotate(45deg);
+              "
+            ></p>
+          </div>
+        </a>
+      </div>
+      <h1><span id="years">- - </span>years</h1>
+      <h1><span id="months">- - </span>months</h1>
+      <h1><span id="days">- - </span>days</h1>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
