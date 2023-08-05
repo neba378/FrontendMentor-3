@@ -2,14 +2,31 @@ var yearInput = document.getElementById("year");
 var monthInput = document.getElementById("month");
 var dayInput = document.getElementById("day");
 var calculate = document.getElementById("calculate");
-calculate.addEventListener("click", function () {
+yearInput.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    result();
+  }
+});
+monthInput.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    result();
+  }
+});
+dayInput.addEventListener("keyup", function (event) {
+  if (event.keyCode === 13) {
+    result();
+  }
+});
+calculate.addEventListener("click", result);
+
+function result() {
   var year = yearInput.value;
   var month = monthInput.value;
   var day = dayInput.value;
 
   var currentYear = new Date().getFullYear();
   var currentMonth = new Date().getMonth() + 1;
-  var currentDay = new Date().getDay() - 1;
+  var currentDay = new Date().getDay();
   if (
     year > currentYear ||
     month > 12 ||
@@ -38,4 +55,4 @@ calculate.addEventListener("click", function () {
     resultMonth.innerHTML = yourMonth + " ";
     resultYear.innerHTML = yourYear + " ";
   }
-});
+}
