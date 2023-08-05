@@ -2,17 +2,8 @@ var yearInput = document.getElementById("year");
 var monthInput = document.getElementById("month");
 var dayInput = document.getElementById("day");
 var calculate = document.getElementById("calculate");
-yearInput.addEventListener("keyup", function (event) {
-  if (event.keyCode === 13) {
-    result();
-  }
-});
-monthInput.addEventListener("keyup", function (event) {
-  if (event.keyCode === 13) {
-    result();
-  }
-});
-dayInput.addEventListener("keyup", function (event) {
+
+document.addEventListener("keyup", function (event) {
   if (event.keyCode === 13) {
     result();
   }
